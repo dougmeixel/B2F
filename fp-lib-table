@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name BF2-0.2)(type KiCad)(uri "$(KIPRJMOD)/BF2-0.2.pretty")(options "")(descr ""))
+)

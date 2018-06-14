@@ -1,0 +1,132 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:testLib0
+LIBS:B2F-0-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L L1
+U 1 1 5B1C591A
+P 5150 2750
+F 0 "L1" V 5100 2750 50  0000 C CNN
+F 1 "59nH" V 5225 2750 50  0000 C CNN
+F 2 "BF2-0.2:0402-HS-0" H 5150 2750 50  0001 C CNN
+F 3 "" H 5150 2750 50  0001 C CNN
+	1    5150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5B1C597A
+P 4800 2900
+F 0 "C1" H 4825 3000 50  0000 L CNN
+F 1 "27pF" H 4825 2800 50  0000 L CNN
+F 2 "BF2-0.2:0402-HS-0" H 4838 2750 50  0001 C CNN
+F 3 "" H 4800 2900 50  0001 C CNN
+	1    4800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5B1C59B3
+P 5500 2900
+F 0 "C2" H 5525 3000 50  0000 L CNN
+F 1 "27pF" H 5525 2800 50  0000 L CNN
+F 2 "BF2-0.2:0402-HS-0" H 5538 2750 50  0001 C CNN
+F 3 "" H 5500 2900 50  0001 C CNN
+	1    5500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_COAXIAL J1
+U 1 1 5B1C5A42
+P 4450 2750
+F 0 "J1" H 4460 2870 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 4565 2750 50  0000 C CNN
+F 2 "BF2-0.2:LINX-CONN-SMA-RCPT" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_COAXIAL J2
+U 1 1 5B1C5AD9
+P 5850 2750
+F 0 "J2" H 5860 2870 50  0000 C CNN
+F 1 "CONN_COAXIAL" V 5965 2750 50  0000 C CNN
+F 2 "BF2-0.2:LINX-CONN-SMA-PLUG" H 5850 2750 50  0001 C CNN
+F 3 "" H 5850 2750 50  0001 C CNN
+	1    5850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3050 5850 3050
+Wire Wire Line
+	5300 2750 5700 2750
+Wire Wire Line
+	5000 2750 4800 2750
+Connection ~ 5500 2750
+Wire Wire Line
+	5850 3050 5850 2950
+Connection ~ 5500 3050
+Wire Wire Line
+	4450 3050 4450 2950
+Connection ~ 4800 3050
+Wire Wire Line
+	4800 2750 4800 2450
+Wire Wire Line
+	4800 2450 4300 2450
+Wire Wire Line
+	4300 2450 4300 2750
+$Comp
+L GND #PWR01
+U 1 1 5B1C5C4F
+P 5850 3050
+F 0 "#PWR01" H 5850 2800 50  0001 C CNN
+F 1 "GND" H 5850 2900 50  0000 C CNN
+F 2 "" H 5850 3050 50  0001 C CNN
+F 3 "" H 5850 3050 50  0001 C CNN
+	1    5850 3050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
